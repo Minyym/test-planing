@@ -50,23 +50,23 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DCOR-01 | Phase ? | Pending |
-| DCOR-02 | Phase ? | Pending |
-| DCOR-03 | Phase ? | Pending |
-| EVDC-01 | Phase ? | Pending |
-| EVDC-02 | Phase ? | Pending |
-| EVDC-03 | Phase ? | Pending |
-| EVDC-04 | Phase ? | Pending |
-| EXPR-01 | Phase ? | Pending |
-| EXPR-02 | Phase ? | Pending |
-| EXPR-03 | Phase ? | Pending |
-| EXPR-04 | Phase ? | Pending |
-| CTRL-01 | Phase ? | Pending |
-| CTRL-02 | Phase ? | Pending |
-| CTRL-03 | Phase ? | Pending |
-| DCOR-04 | Phase ? | Pending |
-| EXPR-05 | Phase ? | Pending |
-| CTRL-04 | Phase ? | Pending |
+| CTRL-01 | Phase 1 | Pending |
+| CTRL-02 | Phase 1 | Pending |
+| CTRL-03 | Phase 1 | Pending |
+| EVDC-01 | Phase 2 | Pending |
+| EVDC-02 | Phase 2 | Pending |
+| EVDC-03 | Phase 2 | Pending |
+| EVDC-04 | Phase 2 | Pending |
+| DCOR-01 | Phase 3 | Pending |
+| DCOR-02 | Phase 3 | Pending |
+| DCOR-03 | Phase 3 | Pending |
+| EXPR-01 | Phase 4 | Pending |
+| EXPR-02 | Phase 4 | Pending |
+| EXPR-03 | Phase 4 | Pending |
+| EXPR-04 | Phase 4 | Pending |
+| DCOR-04 | Backlog | Pending |
+| EXPR-05 | Backlog | Pending |
+| CTRL-04 | Backlog | Pending |
 
 **Coverage:**
 - v1 requirements: 13 total
