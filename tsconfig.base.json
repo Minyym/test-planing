@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "types": ["node"],
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@alex/*": ["packages/*/src"],
+      "@alex/protocol": ["packages/protocol/src"],
+      "@alex/protocol/*": ["packages/protocol/src/*"]
+    }
+  }
+}

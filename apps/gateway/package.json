@@ -1,0 +1,32 @@
+{
+  "name": "@alex/gateway",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "build": "tsup src/server.ts --dts --format esm",
+    "lint": "eslint src --ext .ts --max-warnings=0 || true",
+    "test": "vitest run",
+    "test:control": "vitest run src/testing/interrupt.spec.ts",
+    "test:telemetry": "vitest run src/testing/telemetry.spec.ts"
+  },
+  "dependencies": {
+    "@alex/protocol": "workspace:*",
+    "bullmq": "^5.70.1",
+    "dotenv": "^16.4.5",
+    "ioredis": "^5.4.1",
+    "jose": "^5.2.4",
+    "pino": "^9.3.0",
+    "ws": "^8.17.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.10",
+    "tsx": "^4.7.0",
+    "tsup": "^8.1.0",
+    "typescript": "^5.6.3",
+    "vitest": "^1.5.3"
+  }
+}

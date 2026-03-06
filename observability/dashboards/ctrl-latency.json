@@ -1,0 +1,34 @@
+{
+  "id": null,
+  "title": "Duplex CTRL-03",
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "Interrupt ACK",
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum(rate(duplex_interrupt_ack_ms_bucket[5m])) by (le))"
+        },
+        {
+          "expr": "histogram_quantile(0.99, sum(rate(duplex_interrupt_ack_ms_bucket[5m])) by (le))"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "ASR/TTS latency",
+      "targets": [
+        { "expr": "sum(rate(duplex_asr_latency_ms_sum[1m])) / sum(rate(duplex_asr_latency_ms_count[1m]))" },
+        { "expr": "sum(rate(duplex_tts_latency_ms_sum[1m])) / sum(rate(duplex_tts_latency_ms_count[1m]))" }
+      ]
+    },
+    {
+      "type": "bargauge",
+      "title": "RAG hit ratio",
+      "targets": [
+        { "expr": "avg(duplex_rag_hit_ratio)"
+        }
+      ]
+    }
+  ]
+}

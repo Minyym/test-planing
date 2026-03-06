@@ -1,0 +1,16 @@
+{
+  "name": "alex-health-concierge",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "tsup": "^8.1.0",
+    "vitest": "^1.5.3"
+  }
+}

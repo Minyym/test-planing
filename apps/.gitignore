@@ -1,0 +1,3 @@
+node_modules
+apps/gateway/node_modules
+pages/**/node_modules
